@@ -37,24 +37,6 @@
     <DocumentationFile>bin\Release\ProjectEuler.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Problem1.fsx" />
-    <None Include="Problem2.fsx" />
-    <None Include="Problem3.fsx" />
-    <None Include="Problem4.fsx" />
-    <None Include="Problem5.fsx" />
-    <None Include="Problem6.fsx" />
-    <None Include="Problem7.fsx" />
-  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>
@@ -71,6 +53,29 @@
     </Otherwise>
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
+  <ItemGroup>
+    <None Include="Problem1.fsx" />
+    <None Include="Problem2.fsx" />
+    <None Include="Problem3.fsx" />
+    <None Include="Problem4.fsx" />
+    <None Include="Problem5.fsx" />
+    <None Include="Problem6.fsx" />
+    <None Include="Problem7.fsx" />
+    <None Include="Problem8.fsx" />
+    <None Include="Problem9.fsx" />
+    <None Include="Problem10.fsx" />
+    <None Include="Problem11.fsx" />
+    <Content Include="Problem11.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
